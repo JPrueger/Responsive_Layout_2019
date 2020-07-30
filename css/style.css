@@ -1,0 +1,835 @@
+/* ########### BASICS ########### */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.visually-hidden {
+    position: absolute;
+  
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+  
+    white-space: nowrap;
+  
+    clip-path: inset(100%);
+    /* Meldsung: "Invalid separator in shape definition. It must be a comma." - code für Visually Hidden von Unterricht übernommen */ 
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.menu_points {
+    display: none;
+}
+
+.wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+h1, h2, h3 {
+    font-family: 'Pragati Narrow', sans-serif;
+    text-transform: uppercase;
+}
+
+p {
+    font-family: 'Pragati Narrow', sans-serif;
+}
+
+h1 {
+    width: 10%;
+    font-size: 52px;
+    line-height: 45px;
+}
+
+footer a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+}
+
+.wrapper_footer a {
+    border-right: 1px solid white;
+    height: 70%;
+}
+
+.wrapper_footer a:last-child {
+    border-right: none;
+}
+
+.wrapper_footer p {
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+#current {
+    color: #40ABE3;
+}
+
+/* ########### HEADER ########### */
+
+.body_index {
+    background-image: url('../images/mobile_header.png');
+    background-repeat: no-repeat;
+    background-position-x: right;
+}
+
+.wrapper_navigation {
+    height: 50px;
+    background-color: white;
+    box-shadow: 0 1px 5px 0px rgb(206, 206, 206);
+    padding: 0;
+    margin: 0;
+    padding-top: 10px;
+    margin-bottom: 65px;
+}
+
+.wrapper_menu {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.Lyte_logo svg {
+    width: 55px;
+}
+
+.menu_icon {
+    width: 20px;
+    transform: translateY(30%)
+}
+
+header p {
+    color: white; 
+    font-size: 20px;
+    line-height: 21px;
+    width: 80%;
+    margin-bottom: 260px;  
+}
+
+header h1 {
+    color: white;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 25px;
+}
+
+/* MAIN */
+
+main .wrapper {
+    text-align: center;
+}
+
+main h2 {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-size: 18px;
+}
+
+main svg {
+    margin-bottom: 20px;
+}
+
+.image_galerie_tablet, .image_galerie_desktop {
+    display: none;
+}
+
+main p {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 35px;
+    line-height: 20px;
+    font-size: 16px;
+}
+
+
+main ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 50px;
+}
+
+main ul img {
+    width: 100%;
+    margin-bottom: 8px;
+    border-radius: 5px;
+}
+
+main svg {
+    fill: #40ABE3;
+}
+
+/* ########### FOOTER ########### */
+
+footer {
+    background-color: #175A8B;
+    padding-top: 18px;
+    padding-bottom: 25px;
+}
+
+footer p {
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+    font-size: 12px;
+}
+
+.wrapper_social_media_icons {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 25px;
+}
+
+.wrapper_footer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.wrapper_footer p {
+    font-size: 12px;
+    border-right: none;
+    padding: 0;
+} 
+
+.wrapper_footer a {
+    border-right: none;
+    padding: 0;
+}
+
+.wrapper_footer a:hover {
+    text-decoration: underline;
+}
+
+
+/* ########### TIPS PAGE ############# */
+
+.h1_subpage {
+    color: black;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 25px;
+    width: 65%;
+}
+
+.p_subpage {
+    color: black; 
+    font-size: 20px;
+    line-height: 21px;
+    width: 80%;
+    margin-bottom: 35px;  
+}
+
+.card_tips {
+    box-shadow: 0 1px 15px 0px rgb(206, 206, 206); 
+    border-radius: 5px;
+    margin-bottom: 18px;
+    padding-bottom: 23px;
+}
+
+.card_tips img {
+    width: 100%;
+    margin-bottom: 15px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.card_tips p {
+    width: 80%;
+    text-align: center;
+    font-size: 16px;
+    margin: 0 auto;
+}
+
+.card_tips a {
+    text-decoration: none;
+    color: #40ABE3;
+}
+
+.card_tips a:hover {
+    text-decoration: underline;
+}
+
+/* ########### GET IN TOUCH PAGE ############# */
+
+form div {
+    text-align: left;
+    font-family: 'Pragati Narrow', sans-serif;
+}
+
+.get_in_touch_image {
+    display: none;
+}
+
+.radio label {
+    margin-right: 40px;
+}
+
+.radioinput {
+    margin-left: 10px;
+}
+
+/* MELDUNG: "Gleiche Farbe für background-color und border-top-color" - weil sonst der Button im Hover Zustand hüpft, deshalb habe ich hier 2x den gleichen border verwendet*/
+button {
+    background-color: #09385A;
+    border: 1px solid #09385A;
+    color: white;
+    text-transform: uppercase;
+    font-size: 16px;
+    margin: 0;
+    padding: 10px 66px;
+    border-radius: 5px;
+    font-family: 'Pragati Narrow', sans-serif;
+    margin-bottom: 60px;
+}
+
+button:hover {
+    background-color: white;
+    border: 1px solid #09385A;
+    color: #09385A;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    width: 100%;
+    border: 1px solid grey;
+    border-radius: 5px;
+    height: 45px;
+    margin-bottom: 20px;
+}
+
+textarea {
+    width: 100%;
+    border: 1px solid grey;
+    border-radius: 5px;
+    margin-bottom: 25px;
+}
+
+input[type="radio"] {
+    margin-bottom: 25px;
+}
+   
+.wrapper_form {
+    max-width: 500px;
+}
+
+.image_get_in_touch_desktop {
+    display: none;
+}
+
+/* ########### Breakpoint @ 450px ############# */
+
+@media (min-width: 450px) {
+    main ul {
+        display: flex;
+        flex-wrap: wrap;   
+        justify-content: center; 
+    }
+
+    main ul li {
+        flex-basis: 40%;
+        margin-right: 10px;  
+    }
+
+    .wrapper_footer {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .wrapper_footer p {
+        font-size: 12px;
+        padding-right: 10px;
+        padding-left: 10px;
+    } 
+
+    .wrapper_footer a {
+        border-right: none;
+    }
+
+}
+
+/* ########### INDEX - Breakpoint @ 768px ############# */
+
+@media (min-width: 768px) {
+    .body_index {
+        background-image: url('../images/tablet_header.png');
+        background-repeat: no-repeat;
+        background-position-x: center;
+    }
+
+    .wrapper_nav {
+        width: 250px;
+    }
+
+    .menu_points {
+        display: flex;
+        list-style: none;
+        margin: 0 auto;
+        padding: 0;
+        justify-content: space-between;
+    }
+
+    .wrapper {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    .wrapper_menu {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    .menu_points a {
+        font-family: 'Pragati Narrow', sans-serif;
+        text-decoration: none;
+        color: black;
+        text-transform: uppercase;
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    .menu_points a:hover {
+        color: #40ABE3;
+    }
+
+    header p {
+        color: white; 
+        font-size: 22px;
+        line-height: 23px;
+        width: 60%;
+        margin-bottom: 280px;  
+    }
+
+    .menu_icon {
+        display: none; 
+    }
+
+    header h1 {
+        color: white;
+        padding: 0;
+        margin: 0;
+        margin-bottom: 25px;
+        font-size: 55px;
+        width: 65%;
+        line-height: 47px;
+    }
+
+    .image_galerie_mobile, .image_galerie_desktop {
+        display: none;
+    }
+
+    .image_galerie_tablet {
+        display: initial;
+    }
+
+    .flexbox_main {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .flexbox_main div {
+        flex-basis: 40%;
+        margin: 0 auto;
+    }
+
+    main p {
+        margin-bottom: 55px;
+    }
+
+    main h2 {
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+
+    main ul {
+        display: flex;
+        flex-wrap: wrap;   
+        justify-content: center; 
+    }
+
+    main ul li {
+        flex-basis: 40%;
+        margin-right: 10px;  
+    }
+    
+    main ul img {
+        margin-bottom: 8px;
+    }
+    
+    main svg {
+        fill: #40ABE3;
+    }
+
+    footer {
+        padding-top: 35px;
+        padding-bottom: 35px;
+    }
+
+    .wrapper_footer_all {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .wrapper_social_media_icons {
+        justify-content: flex-start;
+        margin: 0;
+    }
+
+    .wrapper_social_media_icons svg {
+        margin-right: 30px;
+    }
+
+    .wrapper_footer {
+        justify-content: flex-end;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .wrapper_footer a {
+        border-right: 1px solid white;
+    }
+
+    .wrapper_footer a:last-child p {
+        padding-right: 0;
+    }
+
+    .wrapper_footer p {
+        font-size: 12px;
+        padding-right: 10px;
+        padding-left: 10px;
+    } 
+}
+
+
+/* ########### TIPS - Breakpoint @ 768px ############# */
+
+@media (min-width: 768px) {
+    .p_subpage {
+        font-size: 20px;
+        line-height: 21px;
+        width: 70%;
+        margin-bottom: 50px;   
+    }
+
+    .wrapper_cards {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 45px;
+    }
+
+    .card_tips {
+        flex-basis: 45%;
+        margin-right: 15px; 
+    }
+
+    .card_tips:nth-child(2n) {
+        margin-right: 0;
+    }
+
+}
+
+/* ########### GET IN TOUCH - Breakpoint @ 768px ############# */
+
+@media (min-width: 768px) {
+    .wrapper_form {
+        max-width: 500px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"] {
+    width: 70%;
+    }
+
+    textarea {
+        width: 70%;
+    }
+
+    .image_get_in_touch_desktop {
+        display: none;
+    }
+}
+
+/* ########### INDEX - Breakpoint @ 1366px ############# */
+
+
+@media (min-width: 1366px) {
+    .body_index {
+        background-image: url('../images/desktop_header.png');
+        background-repeat: no-repeat;
+        background-position-x: center;
+    }
+
+    .wrapper_navigation {
+        height: 85px;
+        padding-top: 25px;
+        margin-bottom: 65px;
+    }
+    
+    .Lyte_logo svg {
+        width: 90px;
+    }
+    
+    .menu_icon {
+        display: none; 
+    }
+
+    .wrapper_nav {
+        width: 400px;
+    }
+
+    .menu_points a {
+        text-decoration: none;
+        color: black;
+        text-transform: uppercase;
+        font-size: 21px;
+    }
+
+    .wrapper {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    .wrapper_menu {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    header h1 {
+        margin-bottom: 25px;
+        font-size: 80px;
+        width: 55%;
+        line-height: 75px;
+    }
+
+    .flexbox_main {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .flexbox_main div {
+        flex-basis: 20%;
+        margin: 0 auto;
+    }
+
+    main p {
+        margin-bottom: 55px;
+        font-size: 19px;
+        line-height: 23px;
+    }
+
+    main h2 {
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+
+    .flexbox_main h2 {
+        font-size: 21px;
+    }
+
+    .wrapper h2 {
+        font-size: 21px;
+    }
+
+    .flexbox_main p {
+        font-size: 19px;
+        line-height: 23px;
+    }
+
+    main ul {
+        display: flex;
+        flex-wrap: wrap;   
+        justify-content: center; 
+    }
+
+    main ul li {
+        flex-basis: 30%;
+        margin-right: 10px;  
+    }
+    
+    main ul img {
+        margin-bottom: 8px;
+    }
+    
+    header p {
+        font-size: 28px;
+        line-height: 29px;
+        width: 40%;
+        margin-bottom: 430px;
+    }
+
+    footer {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .wrapper_social_media_icons svg {
+        margin-right: 40px;
+    }
+
+
+    .wrapper_footer p {
+        font-size: 17px;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .wrapper_footer a:last-child p {
+        padding-right: 0;
+    }
+  
+    .wrapper_footer a {
+        border-right: 1px solid white;
+        height: 100%;
+    } 
+    
+    .wrapper_footer a:last-child {
+        border-right: none;
+    }
+
+    .wrapper_footer:last-child {
+        padding-right: 0;
+    }
+
+    .image_galerie_mobile, .image_galerie_tablet {
+        display: none;
+    }
+
+    .image_galerie_desktop {
+        display: initial;
+        margin-left: 0;
+        padding-top: 0;
+        /* max-height: auto; */
+        margin-bottom: 5px;
+    }
+
+}
+
+/* ########### TIPS - Breakpoint @ 1366px ############# */
+
+@media (min-width: 1366px) {
+    .p_subpage {
+        font-size: 28px;
+        line-height: 29px;
+        width: 50%;
+        margin-bottom: 75px;   
+    }
+
+    .wrapper_cards {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 75px;
+    }
+
+    .card_tips {
+        flex-basis: 30%;
+        margin-right: 15px; 
+    }
+
+    .card_tips:nth-child(2n) {
+        margin-right: 15px;
+    }
+
+    .card_tips p {
+        font-size: 20px;
+        line-height: 22px;
+    }
+}
+
+/* ########### GET IN TOUCH - Breakpoint @ 1366px ############# */
+
+@media (min-width: 1366px) {
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"] {
+    width: 100%;
+    border: 1px solid grey;
+    border-radius: 5px;
+    height: 45px;
+    margin-bottom: 20px;
+}
+
+textarea {
+    width: 100%;
+    border: 1px solid grey;
+    border-radius: 5px;
+    margin-bottom: 25px;
+}
+
+input[type="radio"] {
+    margin-bottom: 25px;
+}
+
+button {
+    font-size: 20px;
+    margin: 0;
+    padding: 6px 95px;
+    margin-bottom: 60px;
+}
+
+button:hover {
+    background-color: white;
+    border: 1px solid #09385A;
+    color: #09385A;
+}
+
+.wrapper_form {
+    display: flex;
+    max-width: 80%;
+    margin-right: 100px;
+}
+
+.wrapper_form div {
+    flex-basis: 60%;
+}
+
+.image_get_in_touch_desktop {
+    display: inherit;
+    margin-left: 100px;
+    padding-top: 28px;
+    max-height: 595px;
+    margin-bottom: 75px;
+}
+
+}
+
+/* ########### Breakpoint @ 2560px ############# */
+@media (min-width: 2560px) { 
+
+    .wrapper {
+        padding-left: 167px;
+        padding-right: 167px;
+    }
+
+    .wrapper_menu {
+        padding-left: 167px;
+        padding-right: 167px;
+    }
+
+    body {
+        max-width: 1700px;
+        margin: 0 auto;
+        box-shadow: 0 1px 5px 0px rgb(206, 206, 206);
+    }
+
+}
+
